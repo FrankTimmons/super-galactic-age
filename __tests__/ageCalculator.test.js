@@ -53,6 +53,7 @@ describe('User', () => {
 
   test('Should check if the user has surpassed the life expectancy and return it as a positive number', () => {
     newUser.mercuryAgeCalc(78.6);
-    expect(newUser.mercuryLeftToLive).toEqual((mercuryLifeExpectancy)); 
-  })
+    expect(newUser.mercuryPastDeath).toEqual(-((78.6) - newUser.mercuryAge)); 
+  });
+
 });

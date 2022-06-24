@@ -31,6 +31,8 @@ export class User {
   pastDeathCalc(lifeExpect){
     if (this.planetAge > lifeExpect){
       return this.lifeExpectancy * -1;
+    }else{
+      return "No";
     }
   }
 }

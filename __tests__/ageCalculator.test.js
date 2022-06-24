@@ -1,4 +1,4 @@
-import { User } from '../src/ageCalculator.js'
+import { User } from '../src/js/ageCalculator.js'
 
 describe('User', () => {
   let newUser;
@@ -54,5 +54,7 @@ describe('User', () => {
   test('Should check if the user has surpassed the life expectancy and return it as a positive number', () => {
     newUser.mercuryAgeCalc(78.6);
     expect(newUser.pastDeath).toEqual((newUser.lifeExpectancy) * -1); 
+    newUser.jupiterAgeCalc(78.6);
+    expect(newUser.pastDeath).toEqual("No"); 
   });
 });

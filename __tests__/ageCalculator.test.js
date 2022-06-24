@@ -45,4 +45,9 @@ describe('User', () => {
     newUser.marsAgeCalc(78.6);
     expect(newUser.marsLifeExpectancy).toEqual((78.6) - newUser.marsAge); 
   });
+
+  test('Should test the users remaining life expectancy on Jupiter', () => {
+    newUser.jupiterAgeCalc(78.6);
+    expect(newUser.jupiterLifeExpectancy).toEqual((78.6) - newUser.jupiterAge); 
+  });
 });

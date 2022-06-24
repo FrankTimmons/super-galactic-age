@@ -25,4 +25,9 @@ describe('User', () => {
     newUser.marsAgeCalc();
     expect(newUser.marsAge).toEqual(newUser.age / 1.88);
   });
+
+  test('Should test the users age on Jupiter', () => {
+    newUser.jupiterAgeCalc();
+    expect(newUser.jupiterAge).toEqual(newUser.age / 11.86);
+  })
 });

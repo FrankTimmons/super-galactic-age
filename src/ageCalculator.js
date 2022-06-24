@@ -4,9 +4,9 @@ export class User {
     this.age = age;
   }
 
-  mercuryAgeCalc(){
+  mercuryAgeCalc(lifeExpect){
     this.mercuryAge = this.age / .24;
-    this.mercuryLifeExpectancy = (78.6/.24) - this.mercuryAge;
+    this.mercuryLifeExpectancy = (lifeExpect) - this.mercuryAge;
   }
 
   venusAgeCalc(){

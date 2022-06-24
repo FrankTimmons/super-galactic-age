@@ -10,4 +10,8 @@ describe('User', () => {
   test('Should make a new user object with an age property', () => {
     expect(newUser.age).toEqual(22);
   });
+
+  test('Should test the users age on mercury', () => {
+    expect(newUser.mercuryAge).toEqual(newUser.age * (1/.24))
+  });
 });

@@ -19,5 +19,10 @@ describe('User', () => {
   test('Should test the users age on Venus', () => {
     newUser.venusAgeCalc();
     expect(newUser.venusAge).toEqual(newUser.age /.62) 
+  });
+
+  test('Should test the users age on Mars', () => {
+    newUser.marsAgeCalc();
+    expect(newUser.marsAge).toEqual(newUser.age /1.88)
   })
 });

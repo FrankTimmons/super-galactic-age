@@ -15,4 +15,8 @@ export class User {
   marsAgeCalc(){
     this.marsAge = this.age / 1.88;
   }
+
+  jupiterAgeCalc(){
+    this.jupiterAge = this.age / 11.86;
+  }
 }

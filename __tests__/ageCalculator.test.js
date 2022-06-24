@@ -29,5 +29,5 @@ describe('User', () => {
   test('Should test the users age on Jupiter', () => {
     newUser.jupiterAgeCalc();
     expect(newUser.jupiterAge).toEqual(newUser.age / 11.86);
-  })
+  });
 });

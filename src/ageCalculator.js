@@ -19,7 +19,8 @@ export class User {
     this.marsLifeExpectancy = (lifeExpect) - this.marsAge;
   }
 
-  jupiterAgeCalc(){
+  jupiterAgeCalc(lifeExpect){
     this.jupiterAge = this.age / 11.86;
+    this.jupiterLifeExpectancy = (lifeExpect) - this.jupiterAge;
   }
 }

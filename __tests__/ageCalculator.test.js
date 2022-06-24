@@ -35,4 +35,9 @@ describe('User', () => {
     newUser.mercuryAgeCalc(78.6);
     expect(newUser.mercuryLifeExpectancy).toEqual((78.6) - newUser.mercuryAge);
   });
+
+  test('Should test the users remaining life expectancy on Venus', () => {
+    newUser.venusAgeCalc(78.6);
+    expect(newUser.venusAge).toEqual((78.6) - newUser.venusAge); 
+  });
 });

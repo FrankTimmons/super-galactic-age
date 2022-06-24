@@ -4,41 +4,42 @@
   <title>Planet age calculator</title>
 </head>
 <body>
-  <h1>Planet age calculator</h1>
-  <form id="age-calc-form">
-    <label for="age">Enter your age in years:</label>
-    <input id="age" type="number">
-    <label for="age">Enter your life expectancy in years:</label>
-    <input id="life-expect" type="number">
-    <div class="radio">
-      <label>
-        <input type="radio" name="planet" value="Mercury" checked>
-        Mercury
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="planet" value="Venus">
-        Venus
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="planet" value="Mars">
-        Mars
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="planet" value="Jupiter">
-        Jupiter
-      </label>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
-  <div id="output">
-    <p>You are <span id="planet-age"></span> years old on <span id="planet"></span>.</p>
-    <p></p>
+  <div class="container">
+    <h1>Planet age calculator</h1>
+    <form id="age-calc-form">
+      <label for="age">Enter your age in years:</label>
+      <input id="age" type="number">
+      <label for="age">Enter your life expectancy in years:</label>
+      <input id="life-expect" type="number">
+      <div class="radio">
+        <label>
+          <input type="radio" name="planet" value="Mercury" checked>
+          Mercury
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="planet" value="Venus">
+          Venus
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="planet" value="Mars">
+          Mars
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="planet" value="Jupiter">
+          Jupiter
+        </label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="output">You are <span id="planet-age"></span> years old on <span id="planet"></span>.</p>
+    <p id="dead">You would have died <span id="dead-for"></span> years ago on <span id="planet-dead"></span></p>
+    <p id="remaining-life">You have <span id="remaining-years"></span>years left to live on <span id="planet-life"></span></p>
   </div>
 </body>
 </html>

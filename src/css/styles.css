@@ -1,0 +1,11 @@
+#output {
+  display: none;
+}
+
+#remaining-life {
+  display: none;
+}
+
+#dead {
+  display: none;
+}

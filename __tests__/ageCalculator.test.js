@@ -13,46 +13,46 @@ describe('User', () => {
 
   test('Should test the users age on Mercury', () => {
     newUser.mercuryAgeCalc();
-    expect(newUser.mercuryAge).toEqual(newUser.age / .24);
+    expect(newUser.planetAge).toEqual(newUser.age / .24);
   });
 
   test('Should test the users age on Venus', () => {
     newUser.venusAgeCalc();
-    expect(newUser.venusAge).toEqual(newUser.age / .62); 
+    expect(newUser.planetAge).toEqual(newUser.age / .62); 
   });
 
   test('Should test the users age on Mars', () => {
     newUser.marsAgeCalc();
-    expect(newUser.marsAge).toEqual(newUser.age / 1.88);
+    expect(newUser.planetAge).toEqual(newUser.age / 1.88);
   });
 
   test('Should test the users age on Jupiter', () => {
     newUser.jupiterAgeCalc();
-    expect(newUser.jupiterAge).toEqual(newUser.age / 11.86);
+    expect(newUser.planetAge).toEqual(newUser.age / 11.86);
   });
 
   test('Should test the users remaining life expectancy on Mercury', () => {
     newUser.mercuryAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual((78.6) - newUser.mercuryAge);
+    expect(newUser.lifeExpectancy).toEqual((78.6) - newUser.planetAge);
   });
 
   test('Should test the users remaining life expectancy on Venus', () => {
     newUser.venusAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual((78.6) - newUser.venusAge); 
+    expect(newUser.lifeExpectancy).toEqual((78.6) - newUser.planetAge); 
   });
 
   test('Should test the users remaining life expectancy on Mars', () => {
     newUser.marsAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual(78.6 - newUser.marsAge); 
+    expect(newUser.lifeExpectancy).toEqual(78.6 - newUser.planetAge); 
   });
 
   test('Should test the users remaining life expectancy on Jupiter', () => {
     newUser.jupiterAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual(78.6 - newUser.jupiterAge); 
+    expect(newUser.lifeExpectancy).toEqual(78.6 - newUser.planetAge); 
   });
 
   test('Should check if the user has surpassed the life expectancy and return it as a positive number', () => {
     newUser.mercuryAgeCalc(78.6);
-    expect(newUser.mercuryPastDeath).toEqual((newUser.lifeExpectancy) * -1); 
+    expect(newUser.pastDeath).toEqual((newUser.lifeExpectancy) * -1); 
   });
 });

@@ -5,29 +5,32 @@ export class User {
   }
 
   mercuryAgeCalc(lifeExpect){
-    this.mercuryAge = this.age / .24;
-    this.lifeExpectancy = (lifeExpect) - this.mercuryAge;
-    if (this.mercuryAge > lifeExpect){
-      this.mercuryPastDeath = this.pastDeathCalc();
-    }
+    this.planetAge = this.age / .24;
+    this.lifeExpectancy = (lifeExpect) - this.planetAge;
+    this.pastDeath = this.pastDeathCalc(lifeExpect);
   }
 
   venusAgeCalc(lifeExpect){
-    this.venusAge = this.age / .62;
-    this.lifeExpectancy = (lifeExpect) - this.venusAge;
+    this.planetAge = this.age / .62;
+    this.lifeExpectancy = (lifeExpect) - this.planetAge;
+    this.pastDeath = this.pastDeathCalc(lifeExpect);
   }
 
   marsAgeCalc(lifeExpect){
-    this.marsAge = this.age / 1.88;
-    this.lifeExpectancy = (lifeExpect) - this.marsAge;
+    this.planetAge = this.age / 1.88;
+    this.lifeExpectancy = (lifeExpect) - this.planetAge;
+    this.pastDeath = this.pastDeathCalc(lifeExpect);
   }
 
   jupiterAgeCalc(lifeExpect){
-    this.jupiterAge = this.age / 11.86;
-    this.lifeExpectancy = (lifeExpect) - this.jupiterAge;
+    this.planetAge = this.age / 11.86;
+    this.lifeExpectancy = (lifeExpect) - this.planetAge;
+    this.pastDeath = this.pastDeathCalc(lifeExpect);
   }
 
-  pastDeathCalc(){
-    return this.lifeExpectancy * -1;
+  pastDeathCalc(lifeExpect){
+    if (this.planetAge > lifeExpect){
+      return this.lifeExpectancy * -1;
+    }
   }
 }

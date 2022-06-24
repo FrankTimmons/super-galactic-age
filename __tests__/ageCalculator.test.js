@@ -32,29 +32,29 @@ describe('User', () => {
   });
 
   test('Should test the users remaining life expectancy on Mercury', () => {
-    newUser.mercuryAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual((78.6) - newUser.planetAge);
+    newUser.mercuryAgeCalc(78);
+    expect(newUser.lifeExpectancy).toEqual((78) - newUser.planetAge);
   });
 
   test('Should test the users remaining life expectancy on Venus', () => {
-    newUser.venusAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual((78.6) - newUser.planetAge); 
+    newUser.venusAgeCalc(78);
+    expect(newUser.lifeExpectancy).toEqual((78) - newUser.planetAge); 
   });
 
   test('Should test the users remaining life expectancy on Mars', () => {
-    newUser.marsAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual(78.6 - newUser.planetAge); 
+    newUser.marsAgeCalc(78);
+    expect(newUser.lifeExpectancy).toEqual(78 - newUser.planetAge); 
   });
 
   test('Should test the users remaining life expectancy on Jupiter', () => {
-    newUser.jupiterAgeCalc(78.6);
-    expect(newUser.lifeExpectancy).toEqual(78.6 - newUser.planetAge); 
+    newUser.jupiterAgeCalc(78);
+    expect(newUser.lifeExpectancy).toEqual(78 - newUser.planetAge); 
   });
 
   test('Should check if the user has surpassed the life expectancy and return it as a positive number', () => {
-    newUser.mercuryAgeCalc(78.6);
+    newUser.mercuryAgeCalc(78);
     expect(newUser.pastDeath).toEqual((newUser.lifeExpectancy) * -1); 
-    newUser.jupiterAgeCalc(78.6);
+    newUser.jupiterAgeCalc(78);
     expect(newUser.pastDeath).toEqual("No"); 
   });
 });

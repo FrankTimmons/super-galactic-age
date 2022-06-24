@@ -40,4 +40,9 @@ describe('User', () => {
     newUser.venusAgeCalc(78.6);
     expect(newUser.venusLifeExpectancy).toEqual((78.6) - newUser.venusAge); 
   });
+
+  test('Should test the users remaining life expectancy on Mars', () => {
+    newUser.venusAgeCalc(78.6);
+    expect(newUser.marsLifeExpectancy).toEqual((78.6) - newUser.marsAge); 
+  });
 });

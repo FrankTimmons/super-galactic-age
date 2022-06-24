@@ -12,6 +12,7 @@ describe('User', () => {
   });
 
   test('Should test the users age on mercury', () => {
+    newUser.mercuryAge();
     expect(newUser.mercuryAge).toEqual(newUser.age * (1/.24))
   });
 });

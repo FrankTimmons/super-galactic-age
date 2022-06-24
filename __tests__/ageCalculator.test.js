@@ -30,4 +30,9 @@ describe('User', () => {
     newUser.jupiterAgeCalc();
     expect(newUser.jupiterAge).toEqual(newUser.age / 11.86);
   });
+
+  test('Should test the users life expectancy on Mercury', () => {
+    newUser.mercuryAgeCalc();
+    expect(newUser.mercuryLifeExpectancy).toEqual((78.6/.24) - (newUser.age / .24));
+  });
 });

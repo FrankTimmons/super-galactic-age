@@ -1,31 +1,36 @@
-# (Application Name)
+# Super Galactic Age
 
-#### (Brief Description of Application)
+#### A Webpage that gives you your age on several planets
 
-#### By (Your Name Here)
+#### By Frank Timmons
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Webpack
+* JavaScript
+* jQuery
+* CSS
+* Bootstrap
+* HTML
 
 ## Description
 
+This webpage lets you input your age and life expectancy, then it gives you an output based on that and a planet you select with radio buttons.
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone this repo to your desktop
+* Open the super-galactic-edge directory in your terminal
+* Run npm install
+* Run npm run build
+* Run npm run start
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No known bugs
 
 ## License
 
-## Contact Information
+[MIT](/LICENSE)
+
+Copyright (c) 2022 Frank Timmons

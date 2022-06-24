@@ -13,16 +13,16 @@ describe('User', () => {
 
   test('Should test the users age on Mercury', () => {
     newUser.mercuryAgeCalc();
-    expect(newUser.mercuryAge).toEqual(newUser.age /.24);
+    expect(newUser.mercuryAge).toEqual(newUser.age / .24);
   });
 
   test('Should test the users age on Venus', () => {
     newUser.venusAgeCalc();
-    expect(newUser.venusAge).toEqual(newUser.age /.62) 
+    expect(newUser.venusAge).toEqual(newUser.age / .62); 
   });
 
   test('Should test the users age on Mars', () => {
     newUser.marsAgeCalc();
-    expect(newUser.marsAge).toEqual(newUser.age /1.88)
-  })
+    expect(newUser.marsAge).toEqual(newUser.age / 1.88);
+  });
 });
